@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tesis_frontend/static/css/main.00596c82.css",
-    "main.js": "/tesis_frontend/static/js/main.d0c85d20.js",
+    "main.css": "/tesis_frontend/static/css/main.f2db1f43.css",
+    "main.js": "/tesis_frontend/static/js/main.bda5ea79.js",
     "static/media/image-removebg-preview.png": "/tesis_frontend/static/media/image-removebg-preview.6adfd62516d787ea8c6b.png",
     "index.html": "/tesis_frontend/index.html",
-    "main.00596c82.css.map": "/tesis_frontend/static/css/main.00596c82.css.map",
-    "main.d0c85d20.js.map": "/tesis_frontend/static/js/main.d0c85d20.js.map"
+    "main.f2db1f43.css.map": "/tesis_frontend/static/css/main.f2db1f43.css.map",
+    "main.bda5ea79.js.map": "/tesis_frontend/static/js/main.bda5ea79.js.map"
   },
   "entrypoints": [
-    "static/css/main.00596c82.css",
-    "static/js/main.d0c85d20.js"
+    "static/css/main.f2db1f43.css",
+    "static/js/main.bda5ea79.js"
   ]
 }
