@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useReducer, useContext } from 'react';
 
 const CartContext = createContext();
 
@@ -21,6 +21,16 @@ export const CartProvider = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
+};
+
+export const useCart = () => {
+  const { cart, dispatch } = useContext(CartContext);
+  const handleAddToCart = (product) => {
+    dispatch({ type: 'ADD_TO_CART', payload: product });
+    alert('Producto agregado al carrito de compras');
+  };
+
+  return { cart, dispatch, handleAddToCart };
 };
 
 export default CartContext;

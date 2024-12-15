@@ -4,7 +4,7 @@ import './styles/App.css';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
-import Card from './components/Card';
+import Card from './components/tarjeta';
 import Map from './components/Map';
 import Footer from './components/Footer';
 import Login from './pages/login';
