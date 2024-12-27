@@ -4,9 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKeyboard, faUser, faShoppingCart, faRightToBracket, faRegistered } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => (
-  <nav className="navbar navbar-expand-lg" style={{ background: "#f8f9fa", boxShadow: "0 -2px 5px rgba(0, 0, 0, 0.1)" }}>
+  <nav className="navbar navbar-expand-lg" style={{ background: "#f8f9fa", boxShadow: "1 -2px 5px rgba(0, 0, 0, 0)" }}>
     <Link className="navbar-brand" to="/">
-      <FontAwesomeIcon icon={faKeyboard} className='navbar-icon' />BestKeyboard
+      <div className="navbar-brand-content">
+        <FontAwesomeIcon icon={faKeyboard} className="navbar-icon" />
+        <span className="navbar-text">BestKeyboard</span>
+      </div>
     </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

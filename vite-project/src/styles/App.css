@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 body{
@@ -15,26 +16,41 @@ body{
 
 /* NAVBAR */
 nav {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px; /* Margen lateral */
 }
 
+/* Estilo general para los enlaces de la barra de navegación */
 .navbar .nav-link {
-    font-weight: bold; /* Hace que el texto esté en negrilla */
-    font-size: 1rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    font-weight: bold;
+    font-size: 1rem;
     display: flex;
-    align-items: center; /* Alinea el texto verticalmente */
+    align-items: center;
     margin-right: 50px;
-
+    text-decoration: none; /* Sin subrayados */
+    color: inherit; /* Hereda el color del tema */
+    transition: color 0.3s ease; /* Transición suave para el color */
 }
 
-.navbar .navbar-brand {
-    font-weight: bold; /* Hace que el texto esté en negrilla */
-    font-size: 1.25rem; /* Ajusta el tamaño de la fuente según tus necesidades */
-    display: flex;
-    align-items: center; /* Alinea el texto verticalmente */
-    margin-right: 100px;
+.navbar .nav-link:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+}
 
+/* Estilo para la marca (logo y texto) */
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaciado entre ícono y texto */
+    margin-right: 100px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones para color y escala */
+}
+
+.navbar .navbar-brand:hover {
+    color: #000000; /* Cambia el color al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
 .navbar .navbar-icon {
@@ -44,6 +60,7 @@ nav {
 .navbar .navbar-icon:hover {
     transform: scale(1.2);
     cursor: pointer;
+    color: #007bff;
 }
 
 .icon {
@@ -56,21 +73,53 @@ nav {
     font-size: 1.25rem;
 }
 
+/* Contenedor de ícono y texto de la marca */
+.navbar-brand-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        margin-right: 20px; /* Reduce el espacio en pantallas pequeñas */
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+        margin-right: 50px; /* Reduce el margen */
+    }
+
+    .navbar .icons .icon {
+        font-size: 1rem; /* Reduce el tamaño de los íconos */
+        padding: 10px;
+    }
+}
+
 
 /* Carrusel */
+.carousel {
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px; /* Esquinas redondeadas */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
 .carousel img {
     height: 400px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 25px;
+    border-radius: 15px; /* Esquinas redondeadas para imágenes */
 }
 
-.carousel {
-    padding-top: 10px;
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
+.carousel:hover {
+    transform: scale(1.05); /* Agrandar carrusel */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agregar sombra */
 }
 
 
@@ -78,19 +127,26 @@ nav {
 .card {
     padding: 5px;
     margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    border-radius: 8px; /* Opcional, para esquinas redondeadas */
 }
 
-.card img{
+.card:hover {
+    transform: scale(1.05); /* Agrandar tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+}
+
+.card img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Opcional, para mantener consistencia en las esquinas */
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
 }
-
 
 /* Footer */
 .footer {

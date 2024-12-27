@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AppWrapper from './App.jsx';
 import './styles/index.css';
-import { AppContent } from './App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <AppContent />
+  <React.StrictMode>
+    <AppWrapper />
+  </React.StrictMode>
 );
