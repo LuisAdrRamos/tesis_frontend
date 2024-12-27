@@ -1,0 +1,130 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    color: black;
+}
+
+
+/* NAVBAR */
+nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar .nav-link {
+    font-weight: bold; /* Hace que el texto esté en negrilla */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    display: flex;
+    align-items: center; /* Alinea el texto verticalmente */
+    margin-right: 50px;
+
+}
+
+.navbar .navbar-brand {
+    font-weight: bold; /* Hace que el texto esté en negrilla */
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    display: flex;
+    align-items: center; /* Alinea el texto verticalmente */
+    margin-right: 100px;
+
+}
+
+.navbar .navbar-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar .navbar-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.icons .profile, .icons .cart, .icons .login, .icons .register {
+    padding: 15px;
+    color: black;
+    font-size: 1.25rem;
+}
+
+
+/* Carrusel */
+.carousel img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.carousel {
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* Tarjetas menu principal */
+.card {
+    padding: 5px;
+    margin: 15px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-text {
+    color: #555;
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-icon {
+    max-width: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
