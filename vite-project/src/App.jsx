@@ -19,7 +19,7 @@ import Carrito from './pages/carrito.jsx';
 
 const AppContent = () => {
   const location = useLocation();
-  const noHeaderFooterRoutes = [];
+  const noHeaderFooterRoutes = ['/login', '/register'];
 
   return (
     <div>

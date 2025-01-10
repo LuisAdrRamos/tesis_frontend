@@ -1,42 +1,122 @@
 .login-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('https://64.media.tumblr.com/5606293666ba77e120a9fcd9228022a1/tumblr_ozhmaeWhdW1rnbw6mo1_540.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .login-form-group {
-    margin-bottom: 20px;
-  }
-  
-  .btn.btn-primary {
-    background-color: #006de1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 2px solid #013b79;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    margin-top: 50px;
-    padding: 10px 20px;
-    width: 100%;
-  }
-  
-  .btn.btn-primary:hover {
-    background-color: #52a5ff;
-  }
-  
-  .login-wrapper {
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    width: 420px;
-    padding: 20px 40px;
-    border-radius: 10px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+  background-color: #00e100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #00e100;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  margin-top: 50px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.btn.btn-primary:hover {
+  background-color: #a1ffa1;
+}
+
+.login-wrapper {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  width: 520px; /* Aumenta el tamaño del cuadro */
+  padding: 30px 50px; /* Aumenta el padding */
+  border-radius: 10px;
+  font-size: 1.2em; /* Aumenta el tamaño del texto */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #00e100;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #00e100;
+}
+
+
+/* Icono */
+
+.brand {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones para color y escala */
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 17px;
+}
+
+.brand:hover {
+  color: #000000; /* Cambia el color al pasar el mouse */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+}
+
+.brand-icon {
+  margin-right: 1px;
+  transition: transform 0.2s ease-in-out, color 0.15s ease;
+}
+
+.brand-icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  color: #000000;
+}
+
+.brand-text {
+  font-size: 1.2em;
+}
+
+/* Links */
+
+.register-link {
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: darkgreen;
+}
+
+.login-link {
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: darkgreen;
+}
