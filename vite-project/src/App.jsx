@@ -32,7 +32,7 @@ const AppContent = () => {
               <div className="row">
                 <Card
                   imgSrc="https://www.info-computer.com/img/cms/Blog%20Camila%20Sa/Teclado%20para%20Escribir%20o%20Trabajar%20en%20Oficina.jpg"
-                  title="Teclados de Oficina"
+                  title="Teclados de Membrana"
                   text="Mejora tu productividad con nuestros teclados de oficina ergonómicos y duraderos."
                   link='/tecladosOficina'
                 />
